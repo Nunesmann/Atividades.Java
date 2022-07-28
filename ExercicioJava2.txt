@@ -1,0 +1,38 @@
+package aulas;
+
+
+	
+		import java.util.Scanner;
+
+		public class AtividadeDois {
+
+			public static void main(String[] args) {
+				Scanner leia = new Scanner(System.in);
+				
+				String nome;
+				int idade = 0;
+				char sexo;
+				double saldoConta = 0.0;
+				
+				System.out.print("Qual é o seu nome?: ");
+				nome = leia.nextLine();
+			
+				System.out.print("Entre com a idade: ");
+				idade = leia.nextInt();
+				
+				System.out.print("Entre com o Sexo: ");
+				sexo = leia.next().charAt(0);
+				
+				System.out.print("Entre com a conta: ");
+				saldoConta = leia.nextDouble();
+
+				System.out.println(nome + " tem " + idade + 
+						" anos e seu sexo é: " + 
+						sexo + ", e possui na conta R$ " 
+						+ saldoConta + ".");
+				
+				leia.close();
+				
+			}
+}
+

@@ -1,0 +1,48 @@
+package Exercicio5;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class aula5 {
+
+	public static void main(String[] args) {
+		/*Estamos em ano de eleições. A empresa "Dados Incertos" precisa fazer uma pesquisa de intenção de votos para divulgar no jornal
+		 * do meio dia "Jornal da meia noite ao meio dia, segunda edição". Os candidatos são: Lula Molusco, da feira do biquíni, perdeu
+		 * um tentáculo em acidente da indústria que trabalha. Bolso Nelson, dizem que cuida dos fazendeiros e muitas cabeças de gado. 
+		 * Cilouca Gomes, pela volta do coronelismo no brasil, "O tempo do café com leite que era bom". Bolos Bolinho, parece que confeitaria
+		 * é sua profissão mas na verdade ele atua no ramo imobiliário.
+		Crie as variáveis necessárias para contar a quantidade de votos que cada candidato possui e mostre na tela. 
+		Use a estrutura de repetição que achar melhor para essa atividade.
+		*/
+		Scanner leia = new Scanner(System.in).useLocale(Locale.US);
+		
+		String candidato1 = "Lula Molusco";
+		String candidato2 = "Bolso Nelson";
+		String candidato3 = "Cilouca Gomes";
+		
+		System.out.println("Entre com o candidato1: ");
+		candidato1 = leia.nextLine();
+		
+		System.out.println("Entre com o candidato2: ");
+		candidato2 = leia.nextLine();
+		
+		System.out.println("Entre com o candidato3: ");
+		candidato2 = leia.nextLine();
+		
+		if(candidato1 > candidato2 && candidato1 > candidato3) {
+			System.out.println("O candidato eleito é: " + candidato1);
+			
+		}
+		else if(candidato2 > candidato3) {
+			System.out.println("O candidato eleito é: " + candidato2);
+		}
+		else {
+			System.out.println("O candidato eleito é: " + candidato3);
+		}
+		
+		leia.close();
+
+}
+
+}
+*Falta concluir!
